@@ -50,7 +50,6 @@ public class H2ConnectionExample {
        preparedStatement.setInt(2, sum);
        resultSet = preparedStatement.executeQuery();
 
-
         example.printEmployers(resultSet);
 
     }
