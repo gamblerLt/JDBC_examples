@@ -25,6 +25,16 @@ public class H2ConnectionExample {
         H2ConnectionExample example = new H2ConnectionExample();
         example.printEmployers(resultSet);
 
+        //galima gauti databese info
+        DatabaseMetaData metaData = connection.getMetaData();
+        ResultSet tablesResultSet =metaData.getTables(null, "PUBLIC", null, null);
+        System.out.println("Visos lenteles, esancios duomenu bazeje:");
+        while (tablesResultSet.next()) {
+           // System.out.println(tablesResultSet.getString(1));
+         //   System.out.println(tablesResultSet.getString(2));
+            System.out.println(tablesResultSet.getString(3));
+        }
+
     }
 
     private void printEmployers(ResultSet resultSet) throws SQLException {

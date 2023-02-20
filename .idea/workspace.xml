@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0aca756-2020-40a6-920f-afa5891518f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/H2ConnectionExample/H2ConnectionExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="d0aca756-2020-40a6-920f-afa5891518f7" name="Changes" comment="02-20">
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/code/academy/H2ConnectionExample/H2ConnectionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/H2ConnectionExample/H2ConnectionExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +73,13 @@
       <option name="presentableId" value="Default" />
       <updated>1676914590635</updated>
     </task>
+    <task id="LOCAL−00001" summary="02-20">
+      <created>1676916747695</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1676916747695</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="02-20" />
+    <option name="LAST_COMMIT_MESSAGE" value="02-20" />
   </component>
 </project>
