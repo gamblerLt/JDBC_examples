@@ -86,7 +86,19 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1676918198528</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="02-20-SQL-connection">
+      <created>1676919708745</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1676919708745</updated>
+    </task>
+    <task id="LOCAL−00004" summary="02-20-SQL-connection">
+      <created>1676920136783</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1676920136783</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

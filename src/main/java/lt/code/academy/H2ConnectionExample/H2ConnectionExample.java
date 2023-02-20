@@ -45,12 +45,41 @@ public class H2ConnectionExample {
        // resultSet = statement.executeQuery("SELECT * FROM DARBUOTOJAS  WHERE PROJEKTAS_ID = 1 AND ALGA >= 3200");
         int id = 1;
         int sum = 300;
-       PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM DARBUOTOJAS  WHERE PROJEKTAS_ID = ? AND ALGA >= ?");
+       PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM DARBUOTOJAS  WHERE " +
+               "PROJEKTAS_ID = ? AND ALGA >= ?");
        preparedStatement.setInt(1, id);
        preparedStatement.setInt(2, sum);
        resultSet = preparedStatement.executeQuery();
 
         example.printEmployers(resultSet);
+
+        //update column on result Set
+        Statement updateStatement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
+                ResultSet.CONCUR_UPDATABLE);
+        resultSet =updateStatement.executeQuery("SELECT * FROM DARBUOTOJAS WHERE asmenskodas = 38109197598");
+        while (resultSet.next()) {
+            resultSet.updateString("vardas", resultSet.getString("vardas").toUpperCase());
+            resultSet.updateString("pavarde", resultSet.getString("pavarde").toUpperCase());
+            resultSet.updateRow();
+        }
+
+        //insert
+     /* preparedStatement = connection.prepareStatement("INSERT INTO PROJEKTAS VALUES (?,?)");
+        preparedStatement.setInt(1, 4);
+        preparedStatement.setString(2, "Testine");
+        preparedStatement.execute();*/
+
+
+        //update
+        preparedStatement = connection.prepareStatement("UPDATE PROJEKTAS SET pavadinimas =? WHERE id = ?");
+        preparedStatement.setInt(2, 4);
+        preparedStatement.setString(1, "Nauja testine");
+        preparedStatement.executeUpdate();
+
+        //delete
+
+        statement = connection.createStatement();
+        statement.execute("DELETE FROM PROJEKTAS WHERE id=" +4);
 
     }
 
