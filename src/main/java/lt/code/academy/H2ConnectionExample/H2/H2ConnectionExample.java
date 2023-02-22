@@ -1,4 +1,4 @@
-package lt.code.academy.H2ConnectionExample;
+package lt.code.academy.H2ConnectionExample.H2;
 
 import java.sql.*;
 
@@ -62,7 +62,7 @@ public class H2ConnectionExample {
             resultSet.updateString("pavarde", resultSet.getString("pavarde").toUpperCase());
             resultSet.updateRow();
         }
-
+//preparestatement sukuria tam tikra sablona kur irasomi klaustukai
         //insert
      /* preparedStatement = connection.prepareStatement("INSERT INTO PROJEKTAS VALUES (?,?)");
         preparedStatement.setInt(1, 4);
